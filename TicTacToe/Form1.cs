@@ -17,15 +17,22 @@ namespace TicTacToe
         private void UpButton1_Click(object sender, EventArgs e)
         {
             UpButton1.Text = ("X");
-            
+
+            if (UpButton2.Text == "X")
+                UpButton1.Text = ("O");
+
+
         }
 
         private void UpButton2_Click(object sender, EventArgs e)
         {
+            UpButton2.Text = ("X");
+
             if (UpButton1.Text == "X")
                 UpButton2.Text = ("O");
-            else
-                UpButton2.Text = ("X");
+           
+           
+               
         }
     }
 }
