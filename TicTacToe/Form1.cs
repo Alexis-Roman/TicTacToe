@@ -21,7 +21,11 @@ namespace TicTacToe
             if (UpButton2.Text == "X")
                 UpButton1.Text = ("O");
 
+            else if (UpButton2.Text == "O")
+                UpButton1.Text = ("X");
 
+            else if (UpButton3.Text == "X")
+                UpButton1.Text = ("O");
         }
 
         private void UpButton2_Click(object sender, EventArgs e)
@@ -30,9 +34,31 @@ namespace TicTacToe
 
             if (UpButton1.Text == "X")
                 UpButton2.Text = ("O");
-           
-           
-               
+
+            else if (UpButton1.Text == "O")
+                UpButton2.Text = ("X");
+
+            else if (UpButton3.Text == "X")
+                UpButton2.Text = ("O");
+
+        }
+
+        private void UpButton3_Click(object sender, EventArgs e)
+        {
+            UpButton3.Text = ("X");
+
+            if (UpButton1.Text == "X")
+                UpButton3.Text = ("O");
+
+            else if (UpButton1.Text == "O")
+                UpButton3.Text = ("X");
+
+            else if (UpButton2.Text == "X")
+                UpButton3.Text = ("O");
+
+            else if (UpButton2.Text == "O")
+                UpButton3.Text = ("X");
+            
         }
     }
 }

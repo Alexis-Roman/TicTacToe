@@ -93,6 +93,7 @@
             this.UpButton3.Size = new System.Drawing.Size(99, 94);
             this.UpButton3.TabIndex = 3;
             this.UpButton3.UseVisualStyleBackColor = false;
+            this.UpButton3.Click += new System.EventHandler(this.UpButton3_Click);
             // 
             // CenterButton1
             // 
