@@ -28,14 +28,15 @@ namespace TicTacToe
                 UpButton1.Text = ("O");
                 Turn++;
             }
-            else if (UpButton2.Text == "O")
+            
+            /* else if (UpButton2.Text == "O")
                 UpButton1.Text = ("X");
 
             else if (UpButton3.Text == "X")
                 UpButton1.Text = ("O");
             else
             { }
-            UpButton1.Enabled = false;
+            UpButton1.Enabled = false; */
         }
 
         private void UpButton2_Click1(object? sender, EventArgs e)
@@ -45,7 +46,18 @@ namespace TicTacToe
 
         private void UpButton2_Click(object sender, EventArgs e)
         {
-            UpButton2.Text = ("X");
+            if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
+            {
+                UpButton2.Text = ("X");
+                Turn++;
+            }
+
+            else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
+            {
+                UpButton2.Text = ("O");
+                Turn++;
+            }
+            /* UpButton2.Text = ("X");
 
             if (UpButton1.Text == "X" )
                 UpButton2.Text = ("O");
@@ -54,13 +66,25 @@ namespace TicTacToe
                 UpButton2.Text = ("X");
 
             else if (UpButton3.Text == "X")
-                UpButton2.Text = ("O");
+                UpButton2.Text = ("O"); */
 
         }
 
         private void UpButton3_Click(object sender, EventArgs e)
         {
-            UpButton3.Text = ("X");
+            if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
+            {
+                UpButton3.Text = ("X");
+                Turn++;
+            }
+
+            else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
+            {
+                UpButton3.Text = ("O");
+                Turn++;
+            }
+
+            /* UpButton3.Text = ("X");
             
             if (UpButton1.Text == "X" && UpButton2.Text == "O")
                 UpButton3.Text = ("X");
@@ -72,38 +96,58 @@ namespace TicTacToe
                 UpButton3.Text = ("O");
 
             else if (UpButton2.Text == "O")
-                UpButton3.Text = ("X");
-            
+                UpButton3.Text = ("X"); */
+
         }
 
         private void CenterButton1_Click(object sender, EventArgs e)
         {
-            CenterButton1.Text = ("X");
+            if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
+            {
+                CenterButton1.Text = ("X");
+                Turn++;
+            }
+
+            else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
+            {
+                CenterButton1.Text = ("O");
+                Turn++;
+            }
         }
 
         private void CenterButton2_Click(object sender, EventArgs e)
         {
-            CenterButton2.Text = ("X");
+            if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
+            {
+                CenterButton2.Text = ("X");
+                Turn++;
+            }
+
+            else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
+            {
+                CenterButton2.Text = ("O");
+                Turn++;
+            }
         }
 
         private void CenterButton3_Click(object sender, EventArgs e)
         {
-            CenterButton3.Text = ("X");
+           
         }
 
         private void DownButton1_Click(object sender, EventArgs e)
         {
-            DownButton1.Text = ("X");
+            
         }
 
         private void DownButton2_Click(object sender, EventArgs e)
         {
-            DownButton2.Text = ("X");
+            
         }
 
         private void DownButton3_Click(object sender, EventArgs e)
         {
-            DownButton3.Text = ("X");
+            
         }
     }
 }
