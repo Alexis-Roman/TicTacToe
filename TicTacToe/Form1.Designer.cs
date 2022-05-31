@@ -80,6 +80,7 @@
             this.CenterButton2.Size = new System.Drawing.Size(95, 90);
             this.CenterButton2.TabIndex = 2;
             this.CenterButton2.UseVisualStyleBackColor = false;
+            this.CenterButton2.Click += new System.EventHandler(this.CenterButton2_Click);
             // 
             // UpButton3
             // 
@@ -107,6 +108,7 @@
             this.CenterButton1.Size = new System.Drawing.Size(99, 90);
             this.CenterButton1.TabIndex = 4;
             this.CenterButton1.UseVisualStyleBackColor = false;
+            this.CenterButton1.Click += new System.EventHandler(this.CenterButton1_Click);
             // 
             // CenterButton3
             // 
@@ -120,6 +122,7 @@
             this.CenterButton3.Size = new System.Drawing.Size(99, 90);
             this.CenterButton3.TabIndex = 5;
             this.CenterButton3.UseVisualStyleBackColor = false;
+            this.CenterButton3.Click += new System.EventHandler(this.CenterButton3_Click);
             // 
             // DownButton1
             // 
@@ -133,6 +136,7 @@
             this.DownButton1.Size = new System.Drawing.Size(99, 94);
             this.DownButton1.TabIndex = 6;
             this.DownButton1.UseVisualStyleBackColor = false;
+            this.DownButton1.Click += new System.EventHandler(this.DownButton1_Click);
             // 
             // DownButton2
             // 
@@ -146,6 +150,7 @@
             this.DownButton2.Size = new System.Drawing.Size(95, 90);
             this.DownButton2.TabIndex = 7;
             this.DownButton2.UseVisualStyleBackColor = false;
+            this.DownButton2.Click += new System.EventHandler(this.DownButton2_Click);
             // 
             // DownButton3
             // 
@@ -159,6 +164,7 @@
             this.DownButton3.Size = new System.Drawing.Size(99, 94);
             this.DownButton3.TabIndex = 8;
             this.DownButton3.UseVisualStyleBackColor = false;
+            this.DownButton3.Click += new System.EventHandler(this.DownButton3_Click);
             // 
             // label1
             // 

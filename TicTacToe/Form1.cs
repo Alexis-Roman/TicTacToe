@@ -9,6 +9,7 @@ namespace TicTacToe
              */
     public partial class TicTacToe : Form
     {
+        int Turn = 1;
         public TicTacToe()
         {
             InitializeComponent();
@@ -16,23 +17,37 @@ namespace TicTacToe
 
         private void UpButton1_Click(object sender, EventArgs e)
         {
-            UpButton1.Text = ("X");
+            if (Turn == 1 || Turn == 3 || Turn ==5 || Turn == 7 || Turn == 9)
+            {
+                UpButton1.Text = ("X");
+                Turn++;
+            }
 
-            if (UpButton2.Text == "X")
+            else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
+            {
                 UpButton1.Text = ("O");
-
+                Turn++;
+            }
             else if (UpButton2.Text == "O")
                 UpButton1.Text = ("X");
 
             else if (UpButton3.Text == "X")
                 UpButton1.Text = ("O");
+            else
+            { }
+            UpButton1.Enabled = false;
+        }
+
+        private void UpButton2_Click1(object? sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void UpButton2_Click(object sender, EventArgs e)
         {
             UpButton2.Text = ("X");
 
-            if (UpButton1.Text == "X")
+            if (UpButton1.Text == "X" )
                 UpButton2.Text = ("O");
 
             else if (UpButton1.Text == "O")
@@ -46,9 +61,9 @@ namespace TicTacToe
         private void UpButton3_Click(object sender, EventArgs e)
         {
             UpButton3.Text = ("X");
-
-            if (UpButton1.Text == "X")
-                UpButton3.Text = ("O");
+            
+            if (UpButton1.Text == "X" && UpButton2.Text == "O")
+                UpButton3.Text = ("X");
 
             else if (UpButton1.Text == "O")
                 UpButton3.Text = ("X");
@@ -59,6 +74,36 @@ namespace TicTacToe
             else if (UpButton2.Text == "O")
                 UpButton3.Text = ("X");
             
+        }
+
+        private void CenterButton1_Click(object sender, EventArgs e)
+        {
+            CenterButton1.Text = ("X");
+        }
+
+        private void CenterButton2_Click(object sender, EventArgs e)
+        {
+            CenterButton2.Text = ("X");
+        }
+
+        private void CenterButton3_Click(object sender, EventArgs e)
+        {
+            CenterButton3.Text = ("X");
+        }
+
+        private void DownButton1_Click(object sender, EventArgs e)
+        {
+            DownButton1.Text = ("X");
+        }
+
+        private void DownButton2_Click(object sender, EventArgs e)
+        {
+            DownButton2.Text = ("X");
+        }
+
+        private void DownButton3_Click(object sender, EventArgs e)
+        {
+            DownButton3.Text = ("X");
         }
     }
 }
