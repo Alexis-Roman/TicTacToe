@@ -67,12 +67,16 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
             {
                 UpButton3.Text = ("X");
+                PlayerXLabel.BackColor = Color.White;
+                PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 UpButton3.Text = ("O");
+                PlayerXLabel.BackColor = Color.LightPink;
+                PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
 
@@ -84,12 +88,16 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
             {
                 CenterButton1.Text = ("X");
+                PlayerXLabel.BackColor = Color.White;
+                PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 CenterButton1.Text = ("O");
+                PlayerXLabel.BackColor = Color.LightPink;
+                PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
 
@@ -101,12 +109,16 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
             {
                 CenterButton2.Text = ("X");
+                PlayerXLabel.BackColor = Color.White;
+                PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 CenterButton2.Text = ("O");
+                PlayerXLabel.BackColor = Color.LightPink;
+                PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
 
@@ -118,12 +130,16 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
             {
                 CenterButton3.Text = ("X");
+                PlayerXLabel.BackColor = Color.White;
+                PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 CenterButton3.Text = ("O");
+                PlayerXLabel.BackColor = Color.LightPink;
+                PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
 
@@ -135,12 +151,16 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
             {
                 DownButton1.Text = ("X");
+                PlayerXLabel.BackColor = Color.White;
+                PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 DownButton1.Text = ("O");
+                PlayerXLabel.BackColor = Color.LightPink;
+                PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
 
@@ -152,12 +172,16 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
             {
                 DownButton2.Text = ("X");
+                PlayerXLabel.BackColor = Color.White;
+                PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 DownButton2.Text = ("O");
+                PlayerXLabel.BackColor = Color.LightPink;
+                PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
 
@@ -169,12 +193,16 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
             {
                 DownButton3.Text = ("X");
+                PlayerXLabel.BackColor = Color.White;
+                PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 DownButton3.Text = ("O");
+                PlayerXLabel.BackColor = Color.LightPink;
+                PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
 
