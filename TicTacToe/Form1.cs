@@ -1,11 +1,9 @@
 namespace TicTacToe
 {            /*
-            1. If button clicked, then print "X" in button text.
-            2. Button became unclickable
-            3. Next button text when clicked print "O", then become unclickable
-            4. Create player 1 win/ player 2 win pop up after the game
-                (need to create player 1 and 2 then add corresponding symbol X/O 
+            4. Create player X win/ player O win pop up after the game
+                (need to create player X and O then add corresponding symbol X/O 
                 (maybe later))
+            5. alternating label color for player X and O (try lang) 
              */
     public partial class TicTacToe : Form
     {
@@ -20,19 +18,21 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn ==5 || Turn == 7 || Turn == 9)
             {
                 UpButton1.Text = ("X");
-                
+                PlayerXLabel.BackColor = Color.White;
+                PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 UpButton1.Text = ("O");
+                PlayerXLabel.BackColor = Color.LightPink;
+                PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
             
             UpButton1.Enabled = false;
-            
-            
+
         }
 
         private void UpButton2_Click1(object? sender, EventArgs e)
@@ -45,12 +45,17 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
             {
                 UpButton2.Text = ("X");
+                PlayerXLabel.BackColor = Color.White;
+                PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
+                
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 UpButton2.Text = ("O");
+                PlayerXLabel.BackColor = Color.LightPink;
+                PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
 
@@ -174,6 +179,11 @@ namespace TicTacToe
             }
 
             DownButton3.Enabled = false;
+        }
+
+        private void Player2Label_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -38,6 +38,8 @@
             this.DownButton2 = new System.Windows.Forms.Button();
             this.DownButton3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.PlayerXLabel = new System.Windows.Forms.Label();
+            this.PlayerOLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // UpButton1
@@ -170,12 +172,41 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(170, 19);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(179, -1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 30);
+            this.label1.Size = new System.Drawing.Size(139, 48);
             this.label1.TabIndex = 9;
             this.label1.Text = "TicTacToe";
+            // 
+            // PlayerXLabel
+            // 
+            this.PlayerXLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PlayerXLabel.AutoSize = true;
+            this.PlayerXLabel.BackColor = System.Drawing.Color.LightPink;
+            this.PlayerXLabel.Font = new System.Drawing.Font("Sitka Small", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PlayerXLabel.Location = new System.Drawing.Point(41, 49);
+            this.PlayerXLabel.Name = "PlayerXLabel";
+            this.PlayerXLabel.Size = new System.Drawing.Size(117, 34);
+            this.PlayerXLabel.TabIndex = 10;
+            this.PlayerXLabel.Text = "Player X";
+            // 
+            // PlayerOLabel
+            // 
+            this.PlayerOLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PlayerOLabel.AutoSize = true;
+            this.PlayerOLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PlayerOLabel.Font = new System.Drawing.Font("Sitka Small", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PlayerOLabel.Location = new System.Drawing.Point(334, 49);
+            this.PlayerOLabel.Name = "PlayerOLabel";
+            this.PlayerOLabel.Size = new System.Drawing.Size(118, 34);
+            this.PlayerOLabel.TabIndex = 11;
+            this.PlayerOLabel.Text = "Player O";
+            this.PlayerOLabel.Click += new System.EventHandler(this.Player2Label_Click);
             // 
             // TicTacToe
             // 
@@ -184,6 +215,8 @@
             this.BackgroundImage = global::TicTacToe.Properties.Resources.tictactoe;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(488, 430);
+            this.Controls.Add(this.PlayerOLabel);
+            this.Controls.Add(this.PlayerXLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DownButton3);
             this.Controls.Add(this.DownButton2);
@@ -215,5 +248,7 @@
         private Button DownButton2;
         private Button DownButton3;
         private Label label1;
+        private Label PlayerXLabel;
+        private Label PlayerOLabel;
     }
 }
