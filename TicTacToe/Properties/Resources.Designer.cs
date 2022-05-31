@@ -63,6 +63,16 @@ namespace TicTacToe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_106832 {
+            get {
+                object obj = ResourceManager.GetObject("img_106832", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tictactoe {
             get {
                 object obj = ResourceManager.GetObject("tictactoe", resourceCulture);

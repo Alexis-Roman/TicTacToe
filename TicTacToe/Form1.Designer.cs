@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.PlayerXLabel = new System.Windows.Forms.Label();
             this.PlayerOLabel = new System.Windows.Forms.Label();
+            this.RestartButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UpButton1
@@ -208,6 +209,20 @@
             this.PlayerOLabel.Text = "Player O";
             this.PlayerOLabel.Click += new System.EventHandler(this.Player2Label_Click);
             // 
+            // RestartButton
+            // 
+            this.RestartButton.BackColor = System.Drawing.Color.Transparent;
+            this.RestartButton.BackgroundImage = global::TicTacToe.Properties.Resources.img_106832;
+            this.RestartButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.RestartButton.FlatAppearance.BorderSize = 0;
+            this.RestartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RestartButton.Location = new System.Drawing.Point(416, 379);
+            this.RestartButton.Name = "RestartButton";
+            this.RestartButton.Size = new System.Drawing.Size(46, 29);
+            this.RestartButton.TabIndex = 12;
+            this.RestartButton.UseVisualStyleBackColor = false;
+            this.RestartButton.Click += new System.EventHandler(this.RestartButton_Click);
+            // 
             // TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -215,6 +230,7 @@
             this.BackgroundImage = global::TicTacToe.Properties.Resources.tictactoe;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(488, 430);
+            this.Controls.Add(this.RestartButton);
             this.Controls.Add(this.PlayerOLabel);
             this.Controls.Add(this.PlayerXLabel);
             this.Controls.Add(this.label1);
@@ -251,5 +267,6 @@
         private Label label1;
         private Label PlayerXLabel;
         private Label PlayerOLabel;
+        private Button RestartButton;
     }
 }

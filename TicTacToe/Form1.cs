@@ -86,10 +86,10 @@ namespace TicTacToe
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
-                    MessageBox.Show("It's a draw.",
-                               "Thank you for playing!", MessageBoxButtons.OK,
+                    MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
                     UpBut1 = 0;
+                    Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
                     UpButton2.Text = ("");
@@ -106,6 +106,7 @@ namespace TicTacToe
                     DownButton1.Enabled = true;
                     DownButton2.Text = ("");
                     DownButton2.Enabled = true;
+                    DownButton3.Text = ("");
                     DownButton3.Enabled = true;
 
                 }
@@ -182,9 +183,28 @@ namespace TicTacToe
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
-                    MessageBox.Show("It's a draw.",
-                               "Thank you for playing!", MessageBoxButtons.OK,
+                    MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    UpBut2 = 0;
+                    Turn = 1;
+                    UpButton1.Text = ("");
+                    UpButton1.Enabled = true;
+                    UpButton2.Text = ("");
+                    UpButton2.Enabled = true;
+                    UpButton3.Text = ("");
+                    UpButton3.Enabled = true;
+                    CenterButton1.Text = ("");
+                    CenterButton1.Enabled = true;
+                    CenterButton2.Text = ("");
+                    CenterButton2.Enabled = true;
+                    CenterButton3.Text = ("");
+                    CenterButton3.Enabled = true;
+                    DownButton1.Text = ("");
+                    DownButton1.Enabled = true;
+                    DownButton2.Text = ("");
+                    DownButton2.Enabled = true;
+                    DownButton3.Text = ("");
+                    DownButton3.Enabled = true;
                 }
                 else
                 { }
@@ -194,6 +214,40 @@ namespace TicTacToe
         private void TicTacToe_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void RestartButton_Click(object sender, EventArgs e)
+        {
+            PlayerXLabel.BackColor = Color.LightPink;
+            PlayerOLabel.BackColor = Color.White;
+            UpBut1 = 0;
+            UpBut2 = 0;
+            UpBut3 = 0;
+            CenBut1 = 0;
+            CenBut2 = 0;
+            CenBut3 = 0;
+            DowBut1 = 0;
+            DowBut2 = 0;
+            DowBut3 = 0;
+            Turn = 1;
+            UpButton1.Text = ("");
+            UpButton1.Enabled = true;
+            UpButton2.Text = ("");
+            UpButton2.Enabled = true;
+            UpButton3.Text = ("");
+            UpButton3.Enabled = true;
+            CenterButton1.Text = ("");
+            CenterButton1.Enabled = true;
+            CenterButton2.Text = ("");
+            CenterButton2.Enabled = true;
+            CenterButton3.Text = ("");
+            CenterButton3.Enabled = true;
+            DownButton1.Text = ("");
+            DownButton1.Enabled = true;
+            DownButton2.Text = ("");
+            DownButton2.Enabled = true;
+            DownButton3.Text = ("");
+            DownButton3.Enabled = true;
         }
 
         private void UpButton3_Click(object sender, EventArgs e)
@@ -259,9 +313,28 @@ namespace TicTacToe
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
-                    MessageBox.Show("It's a draw.",
-                               "Thank you for playing!", MessageBoxButtons.OK,
+                    MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    UpBut3 = 0;
+                    Turn = 1;
+                    UpButton1.Text = ("");
+                    UpButton1.Enabled = true;
+                    UpButton2.Text = ("");
+                    UpButton2.Enabled = true;
+                    UpButton3.Text = ("");
+                    UpButton3.Enabled = true;
+                    CenterButton1.Text = ("");
+                    CenterButton1.Enabled = true;
+                    CenterButton2.Text = ("");
+                    CenterButton2.Enabled = true;
+                    CenterButton3.Text = ("");
+                    CenterButton3.Enabled = true;
+                    DownButton1.Text = ("");
+                    DownButton1.Enabled = true;
+                    DownButton2.Text = ("");
+                    DownButton2.Enabled = true;
+                    DownButton3.Text = ("");
+                    DownButton3.Enabled = true;
                 }
                 else
                 { }
@@ -330,9 +403,28 @@ namespace TicTacToe
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
-                    MessageBox.Show("It's a draw.",
-                               "Thank you for playing!", MessageBoxButtons.OK,
+                    MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    CenBut1 = 0;
+                    Turn = 1;
+                    UpButton1.Text = ("");
+                    UpButton1.Enabled = true;
+                    UpButton2.Text = ("");
+                    UpButton2.Enabled = true;
+                    UpButton3.Text = ("");
+                    UpButton3.Enabled = true;
+                    CenterButton1.Text = ("");
+                    CenterButton1.Enabled = true;
+                    CenterButton2.Text = ("");
+                    CenterButton2.Enabled = true;
+                    CenterButton3.Text = ("");
+                    CenterButton3.Enabled = true;
+                    DownButton1.Text = ("");
+                    DownButton1.Enabled = true;
+                    DownButton2.Text = ("");
+                    DownButton2.Enabled = true;
+                    DownButton3.Text = ("");
+                    DownButton3.Enabled = true;
                 }
                 else
                 { }
@@ -401,9 +493,28 @@ namespace TicTacToe
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
-                    MessageBox.Show("It's a draw.",
-                               "Thank you for playing!", MessageBoxButtons.OK,
+                    MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    CenBut2 = 0;
+                    Turn = 1;
+                    UpButton1.Text = ("");
+                    UpButton1.Enabled = true;
+                    UpButton2.Text = ("");
+                    UpButton2.Enabled = true;
+                    UpButton3.Text = ("");
+                    UpButton3.Enabled = true;
+                    CenterButton1.Text = ("");
+                    CenterButton1.Enabled = true;
+                    CenterButton2.Text = ("");
+                    CenterButton2.Enabled = true;
+                    CenterButton3.Text = ("");
+                    CenterButton3.Enabled = true;
+                    DownButton1.Text = ("");
+                    DownButton1.Enabled = true;
+                    DownButton2.Text = ("");
+                    DownButton2.Enabled = true;
+                    DownButton3.Text = ("");
+                    DownButton3.Enabled = true;
                 }
                 else
                 { }
@@ -472,9 +583,28 @@ namespace TicTacToe
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
-                    MessageBox.Show("It's a draw.",
-                               "Thank you for playing!", MessageBoxButtons.OK,
+                    MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    CenBut3 = 0;
+                    Turn = 1;
+                    UpButton1.Text = ("");
+                    UpButton1.Enabled = true;
+                    UpButton2.Text = ("");
+                    UpButton2.Enabled = true;
+                    UpButton3.Text = ("");
+                    UpButton3.Enabled = true;
+                    CenterButton1.Text = ("");
+                    CenterButton1.Enabled = true;
+                    CenterButton2.Text = ("");
+                    CenterButton2.Enabled = true;
+                    CenterButton3.Text = ("");
+                    CenterButton3.Enabled = true;
+                    DownButton1.Text = ("");
+                    DownButton1.Enabled = true;
+                    DownButton2.Text = ("");
+                    DownButton2.Enabled = true;
+                    DownButton3.Text = ("");
+                    DownButton3.Enabled = true;
                 }
                 else
                 { }
@@ -543,9 +673,28 @@ namespace TicTacToe
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
-                    MessageBox.Show("It's a draw.",
-                               "Thank you for playing!", MessageBoxButtons.OK,
+                    MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    DowBut1 = 0;
+                    Turn = 1;
+                    UpButton1.Text = ("");
+                    UpButton1.Enabled = true;
+                    UpButton2.Text = ("");
+                    UpButton2.Enabled = true;
+                    UpButton3.Text = ("");
+                    UpButton3.Enabled = true;
+                    CenterButton1.Text = ("");
+                    CenterButton1.Enabled = true;
+                    CenterButton2.Text = ("");
+                    CenterButton2.Enabled = true;
+                    CenterButton3.Text = ("");
+                    CenterButton3.Enabled = true;
+                    DownButton1.Text = ("");
+                    DownButton1.Enabled = true;
+                    DownButton2.Text = ("");
+                    DownButton2.Enabled = true;
+                    DownButton3.Text = ("");
+                    DownButton3.Enabled = true;
                 }
                 else
                 { }
@@ -614,9 +763,28 @@ namespace TicTacToe
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
-                    MessageBox.Show("It's a draw.",
-                               "Thank you for playing!", MessageBoxButtons.OK,
+                    MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    DowBut1 = 0;
+                    Turn = 1;
+                    UpButton1.Text = ("");
+                    UpButton1.Enabled = true;
+                    UpButton2.Text = ("");
+                    UpButton2.Enabled = true;
+                    UpButton3.Text = ("");
+                    UpButton3.Enabled = true;
+                    CenterButton1.Text = ("");
+                    CenterButton1.Enabled = true;
+                    CenterButton2.Text = ("");
+                    CenterButton2.Enabled = true;
+                    CenterButton3.Text = ("");
+                    CenterButton3.Enabled = true;
+                    DownButton1.Text = ("");
+                    DownButton1.Enabled = true;
+                    DownButton2.Text = ("");
+                    DownButton2.Enabled = true;
+                    DownButton3.Text = ("");
+                    DownButton3.Enabled = true;
                 }
                 else
                 { }
@@ -685,9 +853,28 @@ namespace TicTacToe
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
-                    MessageBox.Show("It's a draw.",
-                               "Thank you for playing!", MessageBoxButtons.OK,
+                    MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    DowBut1 = 0;
+                    Turn = 1;
+                    UpButton1.Text = ("");
+                    UpButton1.Enabled = true;
+                    UpButton2.Text = ("");
+                    UpButton2.Enabled = true;
+                    UpButton3.Text = ("");
+                    UpButton3.Enabled = true;
+                    CenterButton1.Text = ("");
+                    CenterButton1.Enabled = true;
+                    CenterButton2.Text = ("");
+                    CenterButton2.Enabled = true;
+                    CenterButton3.Text = ("");
+                    CenterButton3.Enabled = true;
+                    DownButton1.Text = ("");
+                    DownButton1.Enabled = true;
+                    DownButton2.Text = ("");
+                    DownButton2.Enabled = true;
+                    DownButton3.Text = ("");
+                    DownButton3.Enabled = true;
                 }
                 else
                 { }
