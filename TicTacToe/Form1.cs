@@ -29,6 +29,7 @@ namespace TicTacToe
                 Turn++;
             }
             
+            UpButton1.Enabled = false;
             
         }
 
@@ -50,8 +51,8 @@ namespace TicTacToe
                 UpButton2.Text = ("O");
                 Turn++;
             }
-            
 
+            UpButton2.Enabled = false;
         }
 
         private void UpButton3_Click(object sender, EventArgs e)
@@ -68,7 +69,7 @@ namespace TicTacToe
                 Turn++;
             }
 
-
+            UpButton3.Enabled = false;
         }
 
         private void CenterButton1_Click(object sender, EventArgs e)
@@ -84,6 +85,8 @@ namespace TicTacToe
                 CenterButton1.Text = ("O");
                 Turn++;
             }
+
+            CenterButton1.Enabled = false;
         }
 
         private void CenterButton2_Click(object sender, EventArgs e)
@@ -99,6 +102,8 @@ namespace TicTacToe
                 CenterButton2.Text = ("O");
                 Turn++;
             }
+
+            CenterButton2.Enabled = false;
         }
 
         private void CenterButton3_Click(object sender, EventArgs e)
@@ -114,6 +119,8 @@ namespace TicTacToe
                 CenterButton3.Text = ("O");
                 Turn++;
             }
+
+            CenterButton3.Enabled = false;
         }
 
         private void DownButton1_Click(object sender, EventArgs e)
@@ -129,6 +136,8 @@ namespace TicTacToe
                 DownButton1.Text = ("O");
                 Turn++;
             }
+
+            DownButton1.Enabled = false;
         }
 
         private void DownButton2_Click(object sender, EventArgs e)
@@ -144,6 +153,8 @@ namespace TicTacToe
                 DownButton2.Text = ("O");
                 Turn++;
             }
+
+            DownButton2.Enabled = false;
         }
 
         private void DownButton3_Click(object sender, EventArgs e)
@@ -159,6 +170,8 @@ namespace TicTacToe
                 DownButton3.Text = ("O");
                 Turn++;
             }
+
+            DownButton3.Enabled = false;
         }
     }
 }
