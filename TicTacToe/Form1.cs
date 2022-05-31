@@ -1,9 +1,12 @@
 namespace TicTacToe
 {            /*
-            4. Create player X win/ player O win pop up after the game
+                > Create player X win/ player O win pop up after the game
                 (need to create player X and O then add corresponding symbol X/O 
                 (maybe later))
-            5. alternating label color for player X and O (try lang) 
+                
+                !!! Dapat may lalabas na messagebox saying player X or O win
+                
+                > 8 possibilities for winning 
              */
     public partial class TicTacToe : Form
     {
@@ -15,7 +18,7 @@ namespace TicTacToe
 
         private void UpButton1_Click(object sender, EventArgs e)
         {
-            if (Turn == 1 || Turn == 3 || Turn ==5 || Turn == 7 || Turn == 9)
+            if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
             {
                 UpButton1.Text = ("X");
                 PlayerXLabel.BackColor = Color.White;
@@ -30,8 +33,10 @@ namespace TicTacToe
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
             }
-            
+
             UpButton1.Enabled = false;
+
+
 
         }
 
@@ -48,7 +53,7 @@ namespace TicTacToe
                 PlayerXLabel.BackColor = Color.White;
                 PlayerOLabel.BackColor = Color.LightPink;
                 Turn++;
-                
+
             }
 
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
@@ -214,4 +219,6 @@ namespace TicTacToe
 
         }
     }
-}
+
+	}
+    
