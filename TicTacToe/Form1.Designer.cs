@@ -45,7 +45,7 @@
             this.UpButton1.BackColor = System.Drawing.Color.White;
             this.UpButton1.FlatAppearance.BorderSize = 0;
             this.UpButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpButton1.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UpButton1.Font = new System.Drawing.Font("MS UI Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UpButton1.ForeColor = System.Drawing.Color.Black;
             this.UpButton1.Location = new System.Drawing.Point(92, 96);
             this.UpButton1.Name = "UpButton1";
@@ -59,7 +59,7 @@
             this.UpButton2.BackColor = System.Drawing.Color.White;
             this.UpButton2.FlatAppearance.BorderSize = 0;
             this.UpButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpButton2.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UpButton2.Font = new System.Drawing.Font("MS UI Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UpButton2.ForeColor = System.Drawing.Color.Black;
             this.UpButton2.Location = new System.Drawing.Point(197, 96);
             this.UpButton2.Name = "UpButton2";
@@ -73,7 +73,7 @@
             this.CenterButton2.BackColor = System.Drawing.Color.White;
             this.CenterButton2.FlatAppearance.BorderSize = 0;
             this.CenterButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CenterButton2.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CenterButton2.Font = new System.Drawing.Font("MS UI Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CenterButton2.ForeColor = System.Drawing.Color.Black;
             this.CenterButton2.Location = new System.Drawing.Point(197, 196);
             this.CenterButton2.Name = "CenterButton2";
@@ -87,7 +87,7 @@
             this.UpButton3.BackColor = System.Drawing.Color.White;
             this.UpButton3.FlatAppearance.BorderSize = 0;
             this.UpButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpButton3.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UpButton3.Font = new System.Drawing.Font("MS UI Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UpButton3.ForeColor = System.Drawing.Color.Black;
             this.UpButton3.Location = new System.Drawing.Point(303, 95);
             this.UpButton3.Name = "UpButton3";
@@ -101,7 +101,7 @@
             this.CenterButton1.BackColor = System.Drawing.Color.White;
             this.CenterButton1.FlatAppearance.BorderSize = 0;
             this.CenterButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CenterButton1.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CenterButton1.Font = new System.Drawing.Font("MS UI Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CenterButton1.ForeColor = System.Drawing.Color.Black;
             this.CenterButton1.Location = new System.Drawing.Point(89, 196);
             this.CenterButton1.Name = "CenterButton1";
@@ -115,7 +115,7 @@
             this.CenterButton3.BackColor = System.Drawing.Color.White;
             this.CenterButton3.FlatAppearance.BorderSize = 0;
             this.CenterButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CenterButton3.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CenterButton3.Font = new System.Drawing.Font("MS UI Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CenterButton3.ForeColor = System.Drawing.Color.Black;
             this.CenterButton3.Location = new System.Drawing.Point(301, 196);
             this.CenterButton3.Name = "CenterButton3";
@@ -129,7 +129,7 @@
             this.DownButton1.BackColor = System.Drawing.Color.White;
             this.DownButton1.FlatAppearance.BorderSize = 0;
             this.DownButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DownButton1.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DownButton1.Font = new System.Drawing.Font("MS UI Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DownButton1.ForeColor = System.Drawing.Color.Black;
             this.DownButton1.Location = new System.Drawing.Point(90, 292);
             this.DownButton1.Name = "DownButton1";
@@ -143,7 +143,7 @@
             this.DownButton2.BackColor = System.Drawing.Color.White;
             this.DownButton2.FlatAppearance.BorderSize = 0;
             this.DownButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DownButton2.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DownButton2.Font = new System.Drawing.Font("MS UI Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DownButton2.ForeColor = System.Drawing.Color.Black;
             this.DownButton2.Location = new System.Drawing.Point(197, 294);
             this.DownButton2.Name = "DownButton2";
@@ -157,7 +157,7 @@
             this.DownButton3.BackColor = System.Drawing.Color.White;
             this.DownButton3.FlatAppearance.BorderSize = 0;
             this.DownButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DownButton3.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DownButton3.Font = new System.Drawing.Font("MS UI Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DownButton3.ForeColor = System.Drawing.Color.Black;
             this.DownButton3.Location = new System.Drawing.Point(301, 293);
             this.DownButton3.Name = "DownButton3";

@@ -9,7 +9,7 @@ namespace TicTacToe
              */
     public partial class TicTacToe : Form
     {
-        int Turn = 1;
+        byte Turn = 1;
         public TicTacToe()
         {
             InitializeComponent();
@@ -20,6 +20,7 @@ namespace TicTacToe
             if (Turn == 1 || Turn == 3 || Turn ==5 || Turn == 7 || Turn == 9)
             {
                 UpButton1.Text = ("X");
+                
                 Turn++;
             }
 
@@ -30,6 +31,7 @@ namespace TicTacToe
             }
             
             UpButton1.Enabled = false;
+            
             
         }
 
