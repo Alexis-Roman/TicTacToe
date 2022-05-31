@@ -231,6 +231,7 @@
             this.MaximizeBox = false;
             this.Name = "TicTacToe";
             this.Text = "TicTacToe";
+            this.Load += new System.EventHandler(this.TicTacToe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

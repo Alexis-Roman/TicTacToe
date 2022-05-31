@@ -80,11 +80,18 @@ namespace TicTacToe
                 MessageBox.Show("Player O wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            else
-                MessageBox.Show("It's a draw.",
-                   "Thank you for playing!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
 
+            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                 CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
+                if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
+                CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
+                {
+                    MessageBox.Show("It's a draw.",
+                               "Thank you for playing!", MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
+                }
+                else
+                { }
         }
 
         private void UpButton2_Click1(object? sender, EventArgs e)
@@ -150,10 +157,24 @@ namespace TicTacToe
                 MessageBox.Show("Player O wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            else
-                MessageBox.Show("It's a draw.",
-                   "Thank you for playing!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+
+            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                 CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
+                if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
+                CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
+                {
+                    MessageBox.Show("It's a draw.",
+                               "Thank you for playing!", MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
+                }
+                else
+                { }
+
+        }
+
+        private void TicTacToe_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void UpButton3_Click(object sender, EventArgs e)
@@ -213,10 +234,18 @@ namespace TicTacToe
                 MessageBox.Show("Player O wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            else
-                MessageBox.Show("It's a draw.",
-                   "Thank you for playing!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+
+            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                  CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
+                if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
+                CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
+                {
+                    MessageBox.Show("It's a draw.",
+                               "Thank you for playing!", MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
+                }
+                else
+                { }
         }
 
         private void CenterButton1_Click(object sender, EventArgs e)
@@ -276,10 +305,18 @@ namespace TicTacToe
                 MessageBox.Show("Player O wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            else
-                MessageBox.Show("It's a draw.",
-                   "Thank you for playing!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+
+            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                 CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
+                if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
+                CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
+                {
+                    MessageBox.Show("It's a draw.",
+                               "Thank you for playing!", MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
+                }
+                else
+                { }
         }
 
         private void CenterButton2_Click(object sender, EventArgs e)
@@ -339,10 +376,18 @@ namespace TicTacToe
                 MessageBox.Show("Player O wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            else
-                MessageBox.Show("It's a draw.",
-                   "Thank you for playing!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+
+            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                  CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
+                if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
+                CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
+                {
+                    MessageBox.Show("It's a draw.",
+                               "Thank you for playing!", MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
+                }
+                else
+                { }
         }
 
         private void CenterButton3_Click(object sender, EventArgs e)
@@ -402,10 +447,18 @@ namespace TicTacToe
                 MessageBox.Show("Player O wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            else
-                MessageBox.Show("It's a draw.",
-                   "Thank you for playing!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+
+            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                 CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
+                if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
+                CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
+                {
+                    MessageBox.Show("It's a draw.",
+                               "Thank you for playing!", MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
+                }
+                else
+                { }
         }
 
         private void DownButton1_Click(object sender, EventArgs e)
@@ -465,10 +518,18 @@ namespace TicTacToe
                 MessageBox.Show("Player O wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            else
-                MessageBox.Show("It's a draw.",
-                   "Thank you for playing!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+
+            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                 CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
+                if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
+                CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
+                {
+                    MessageBox.Show("It's a draw.",
+                               "Thank you for playing!", MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
+                }
+                else
+                { }
         }
 
         private void DownButton2_Click(object sender, EventArgs e)
@@ -528,10 +589,18 @@ namespace TicTacToe
                 MessageBox.Show("Player O wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            else
-                MessageBox.Show("It's a draw.",
-                   "Thank you for playing!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+
+            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                 CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
+                if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
+                CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
+                {
+                    MessageBox.Show("It's a draw.",
+                               "Thank you for playing!", MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
+                }
+                else
+                { }
         }
 
         private void DownButton3_Click(object sender, EventArgs e)
@@ -591,10 +660,18 @@ namespace TicTacToe
                 MessageBox.Show("Player O wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            else
-                MessageBox.Show("It's a draw.",
-                   "Thank you for playing!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+
+            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                 CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
+                if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
+                CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
+                {
+                    MessageBox.Show("It's a draw.",
+                               "Thank you for playing!", MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
+                }
+                else
+                { }
         }
 
         private void Player2Label_Click(object sender, EventArgs e)
