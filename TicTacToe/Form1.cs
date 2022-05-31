@@ -45,22 +45,44 @@ namespace TicTacToe
             //then else statement for draw
             //papalitan lang ==6 if O is the winner
 
-            //3 possibility
+            //3 possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
                 DowBut1 + DowBut2 + DowBut3 == 3)
                 MessageBox.Show("Player X wins! Thank you for playing.",
                     "Congratulations!",MessageBoxButtons.OK, 
                     MessageBoxIcon.Information);
-            //3 possibility
+            //3 possibility for player X
             else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
                 || UpBut3 + CenBut3 + DowBut3 == 3)
                 MessageBox.Show("Player X wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            //2 possibility
+            //2 possibility for player X
             else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
                 MessageBox.Show("Player X wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+
+            //3 possibility for player O
+            if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
+                DowBut1 + DowBut2 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player O
+            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
+                || UpBut3 + CenBut3 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player O
+            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            else
+                MessageBox.Show("It's a draw.",
+                   "Thank you for playing!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
 
         }
@@ -93,21 +115,44 @@ namespace TicTacToe
 
             UpButton2.Enabled = false;
 
+            //3 possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
                 DowBut1 + DowBut2 + DowBut3 == 3)
                 MessageBox.Show("Player X wins! Thank you for playing.",
                     "Congratulations!", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-            //3 possibility
+            //3 possibility for player X
             else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
                 || UpBut3 + CenBut3 + DowBut3 == 3)
                 MessageBox.Show("Player X wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            //2 possibility
+            //2 possibility for player X
             else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
                 MessageBox.Show("Player X wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+
+            //3 possibility for player O
+            if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
+                DowBut1 + DowBut2 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player O
+            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
+                || UpBut3 + CenBut3 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player O
+            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            else
+                MessageBox.Show("It's a draw.",
+                   "Thank you for playing!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
         }
 
@@ -133,21 +178,44 @@ namespace TicTacToe
 
             UpButton3.Enabled = false;
 
+            //3 possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
                 DowBut1 + DowBut2 + DowBut3 == 3)
                 MessageBox.Show("Player X wins! Thank you for playing.",
                     "Congratulations!", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-            //3 possibility
+            //3 possibility for player X
             else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
                 || UpBut3 + CenBut3 + DowBut3 == 3)
                 MessageBox.Show("Player X wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
-            //2 possibility
+            //2 possibility for player X
             else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
                 MessageBox.Show("Player X wins! Thank you for playing.",
                    "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+
+            //3 possibility for player O
+            if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
+                DowBut1 + DowBut2 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player O
+            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
+                || UpBut3 + CenBut3 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player O
+            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            else
+                MessageBox.Show("It's a draw.",
+                   "Thank you for playing!", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
         }
 
@@ -172,6 +240,46 @@ namespace TicTacToe
             }
 
             CenterButton1.Enabled = false;
+
+            //3 possibility for player X
+            if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
+                DowBut1 + DowBut2 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player X
+            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
+                || UpBut3 + CenBut3 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player X
+            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+
+            //3 possibility for player O
+            if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
+                DowBut1 + DowBut2 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player O
+            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
+                || UpBut3 + CenBut3 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player O
+            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            else
+                MessageBox.Show("It's a draw.",
+                   "Thank you for playing!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
         }
 
         private void CenterButton2_Click(object sender, EventArgs e)
@@ -195,6 +303,46 @@ namespace TicTacToe
             }
 
             CenterButton2.Enabled = false;
+
+            //3 possibility for player X
+            if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
+                DowBut1 + DowBut2 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player X
+            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
+                || UpBut3 + CenBut3 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player X
+            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+
+            //3 possibility for player O
+            if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
+                DowBut1 + DowBut2 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player O
+            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
+                || UpBut3 + CenBut3 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player O
+            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            else
+                MessageBox.Show("It's a draw.",
+                   "Thank you for playing!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
         }
 
         private void CenterButton3_Click(object sender, EventArgs e)
@@ -218,6 +366,46 @@ namespace TicTacToe
             }
 
             CenterButton3.Enabled = false;
+
+            //3 possibility for player X
+            if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
+                DowBut1 + DowBut2 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player X
+            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
+                || UpBut3 + CenBut3 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player X
+            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+
+            //3 possibility for player O
+            if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
+                DowBut1 + DowBut2 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player O
+            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
+                || UpBut3 + CenBut3 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player O
+            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            else
+                MessageBox.Show("It's a draw.",
+                   "Thank you for playing!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
         }
 
         private void DownButton1_Click(object sender, EventArgs e)
@@ -241,6 +429,46 @@ namespace TicTacToe
             }
 
             DownButton1.Enabled = false;
+
+            //3 possibility for player X
+            if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
+                DowBut1 + DowBut2 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player X
+            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
+                || UpBut3 + CenBut3 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player X
+            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+
+            //3 possibility for player O
+            if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
+                DowBut1 + DowBut2 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player O
+            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
+                || UpBut3 + CenBut3 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player O
+            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            else
+                MessageBox.Show("It's a draw.",
+                   "Thank you for playing!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
         }
 
         private void DownButton2_Click(object sender, EventArgs e)
@@ -264,6 +492,46 @@ namespace TicTacToe
             }
 
             DownButton2.Enabled = false;
+
+            //3 possibility for player X
+            if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
+                DowBut1 + DowBut2 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player X
+            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
+                || UpBut3 + CenBut3 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player X
+            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+
+            //3 possibility for player O
+            if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
+                DowBut1 + DowBut2 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player O
+            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
+                || UpBut3 + CenBut3 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player O
+            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            else
+                MessageBox.Show("It's a draw.",
+                   "Thank you for playing!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
         }
 
         private void DownButton3_Click(object sender, EventArgs e)
@@ -287,12 +555,53 @@ namespace TicTacToe
             }
 
             DownButton3.Enabled = false;
+
+            //3 possibility for player X
+            if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
+                DowBut1 + DowBut2 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player X
+            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
+                || UpBut3 + CenBut3 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player X
+            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+
+            //3 possibility for player O
+            if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
+                DowBut1 + DowBut2 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility for player O
+            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
+                || UpBut3 + CenBut3 + DowBut3 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility for player O
+            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+                MessageBox.Show("Player O wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            else
+                MessageBox.Show("It's a draw.",
+                   "Thank you for playing!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
         }
 
         private void Player2Label_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 
 	}
