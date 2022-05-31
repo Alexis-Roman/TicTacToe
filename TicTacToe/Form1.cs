@@ -12,6 +12,7 @@ namespace TicTacToe
     {
         byte Turn = 1;
         byte UpBut1, UpBut2, UpBut3, CenBut1, CenBut2, CenBut3, DowBut1, DowBut2, DowBut3;
+        
         public TicTacToe()
         {
             InitializeComponent();
@@ -38,6 +39,9 @@ namespace TicTacToe
             }
 
             UpButton1.Enabled = false;
+
+            if (UpBut1 + UpBut2 + UpBut3 == 3)
+                MessageBox.Show("Player X wins. Congratulations!");
 
 
 
@@ -70,6 +74,9 @@ namespace TicTacToe
             }
 
             UpButton2.Enabled = false;
+
+            if (UpBut1 + UpBut2 + UpBut3 == 3)
+                MessageBox.Show("Player X wins. Congratulations!");
         }
 
         private void UpButton3_Click(object sender, EventArgs e)
@@ -93,6 +100,9 @@ namespace TicTacToe
             }
 
             UpButton3.Enabled = false;
+
+            if (UpBut1 + UpBut2 + UpBut3 == 3)
+                MessageBox.Show("Player X wins. Congratulations!");
         }
 
         private void CenterButton1_Click(object sender, EventArgs e)
