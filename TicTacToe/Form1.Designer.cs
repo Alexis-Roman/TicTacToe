@@ -246,6 +246,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "TicTacToe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TicTacToe";
             this.Load += new System.EventHandler(this.TicTacToe_Load);
             this.ResumeLayout(false);

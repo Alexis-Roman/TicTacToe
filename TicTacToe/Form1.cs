@@ -40,55 +40,66 @@ namespace TicTacToe
             }
 
             UpButton1.Enabled = false;
-            //WINNER CODE 
-            //8 winning possibility per player... so 15 na else if???
-            //then else statement for draw
-            //papalitan lang ==6 if O is the winner
 
-            //3 possibility for player X
+            // possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
-                DowBut1 + DowBut2 + DowBut3 == 3)
+                DowBut1 + DowBut2 + DowBut3 == 3 || UpBut1 + CenBut1 + DowBut1 == 3 ||
+                UpBut2 + CenBut2 + DowBut2 == 3 || UpBut3 + CenBut3 + DowBut3 == 3 ||
+                UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+            {
                 MessageBox.Show("Player X wins! Thank you for playing.",
-                    "Congratulations!",MessageBoxButtons.OK, 
-                    MessageBoxIcon.Information);
-            //3 possibility for player X
-            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
-                || UpBut3 + CenBut3 + DowBut3 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player X
-            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                      "Congratulations!", MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
 
-            //3 possibility for player O
+            // possibility for player O
             if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
-                DowBut1 + DowBut2 + DowBut3 == -3)
+                DowBut1 + DowBut2 + DowBut3 == -3 || UpBut1 + CenBut1 + DowBut1 == -3 ||
+                UpBut2 + CenBut2 + DowBut2 == -3 || UpBut3 + CenBut3 + DowBut3 == -3 ||
+                UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+            {
                 MessageBox.Show("Player O wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player O
-            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
-                || UpBut3 + CenBut3 + DowBut3 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player O
-            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                       "Congratulations!", MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
 
-            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
+
+            if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
                  CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
                     MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    PlayerXLabel.BackColor = Color.LightPink;
+                    PlayerOLabel.BackColor = Color.White;
                     UpBut1 = 0;
+                    UpBut2 = 0;
+                    UpBut3 = 0;
+                    CenBut1 = 0;
+                    CenBut2 = 0;
+                    CenBut3 = 0;
+                    DowBut1 = 0;
+                    DowBut2 = 0;
+                    DowBut3 = 0;
                     Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
@@ -142,50 +153,65 @@ namespace TicTacToe
 
             UpButton2.Enabled = false;
 
-            //3 possibility for player X
+            // possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
-                DowBut1 + DowBut2 + DowBut3 == 3)
+                DowBut1 + DowBut2 + DowBut3 == 3 || UpBut1 + CenBut1 + DowBut1 == 3 ||
+                UpBut2 + CenBut2 + DowBut2 == 3 || UpBut3 + CenBut3 + DowBut3 == 3 ||
+                UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+            {
                 MessageBox.Show("Player X wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player X
-            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
-                || UpBut3 + CenBut3 + DowBut3 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player X
-            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                      "Congratulations!", MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
 
-            //3 possibility for player O
+            // possibility for player O
             if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
-                DowBut1 + DowBut2 + DowBut3 == -3)
+                DowBut1 + DowBut2 + DowBut3 == -3 || UpBut1 + CenBut1 + DowBut1 == -3 ||
+                UpBut2 + CenBut2 + DowBut2 == -3 || UpBut3 + CenBut3 + DowBut3 == -3 ||
+                UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+            {
                 MessageBox.Show("Player O wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player O
-            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
-                || UpBut3 + CenBut3 + DowBut3 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player O
-            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                       "Congratulations!", MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
 
-            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
+
+            if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
                  CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
                     MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    PlayerXLabel.BackColor = Color.LightPink;
+                    PlayerOLabel.BackColor = Color.White;
+                    UpBut1 = 0;
                     UpBut2 = 0;
+                    UpBut3 = 0;
+                    CenBut1 = 0;
+                    CenBut2 = 0;
+                    CenBut3 = 0;
+                    DowBut1 = 0;
+                    DowBut2 = 0;
+                    DowBut3 = 0;
                     Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
@@ -272,50 +298,65 @@ namespace TicTacToe
 
             UpButton3.Enabled = false;
 
-            //3 possibility for player X
+            // possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
-                DowBut1 + DowBut2 + DowBut3 == 3)
+                DowBut1 + DowBut2 + DowBut3 == 3 || UpBut1 + CenBut1 + DowBut1 == 3 ||
+                UpBut2 + CenBut2 + DowBut2 == 3 || UpBut3 + CenBut3 + DowBut3 == 3 ||
+                UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+            {
                 MessageBox.Show("Player X wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player X
-            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
-                || UpBut3 + CenBut3 + DowBut3 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player X
-            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                      "Congratulations!", MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
 
-            //3 possibility for player O
+            // possibility for player O
             if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
-                DowBut1 + DowBut2 + DowBut3 == -3)
+                DowBut1 + DowBut2 + DowBut3 == -3 || UpBut1 + CenBut1 + DowBut1 == -3 ||
+                UpBut2 + CenBut2 + DowBut2 == -3 || UpBut3 + CenBut3 + DowBut3 == -3 ||
+                UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+            {
                 MessageBox.Show("Player O wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player O
-            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
-                || UpBut3 + CenBut3 + DowBut3 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player O
-            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                       "Congratulations!", MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
 
-            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
+
+            if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
                   CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
                     MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    PlayerXLabel.BackColor = Color.LightPink;
+                    PlayerOLabel.BackColor = Color.White;
+                    UpBut1 = 0;
+                    UpBut2 = 0;
                     UpBut3 = 0;
+                    CenBut1 = 0;
+                    CenBut2 = 0;
+                    CenBut3 = 0;
+                    DowBut1 = 0;
+                    DowBut2 = 0;
+                    DowBut3 = 0;
                     Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
@@ -362,50 +403,65 @@ namespace TicTacToe
 
             CenterButton1.Enabled = false;
 
-            //3 possibility for player X
+            // possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
-                DowBut1 + DowBut2 + DowBut3 == 3)
+                DowBut1 + DowBut2 + DowBut3 == 3 || UpBut1 + CenBut1 + DowBut1 == 3 ||
+                UpBut2 + CenBut2 + DowBut2 == 3 || UpBut3 + CenBut3 + DowBut3 == 3 ||
+                UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+            {
                 MessageBox.Show("Player X wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player X
-            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
-                || UpBut3 + CenBut3 + DowBut3 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player X
-            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                      "Congratulations!", MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
 
-            //3 possibility for player O
+            // possibility for player O
             if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
-                DowBut1 + DowBut2 + DowBut3 == -3)
+                DowBut1 + DowBut2 + DowBut3 == -3 || UpBut1 + CenBut1 + DowBut1 == -3 ||
+                UpBut2 + CenBut2 + DowBut2 == -3 || UpBut3 + CenBut3 + DowBut3 == -3 ||
+                UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+            {
                 MessageBox.Show("Player O wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player O
-            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
-                || UpBut3 + CenBut3 + DowBut3 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player O
-            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                       "Congratulations!", MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
 
-            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
+
+            if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
                  CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
                     MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    PlayerXLabel.BackColor = Color.LightPink;
+                    PlayerOLabel.BackColor = Color.White;
+                    UpBut1 = 0;
+                    UpBut2 = 0;
+                    UpBut3 = 0;
                     CenBut1 = 0;
+                    CenBut2 = 0;
+                    CenBut3 = 0;
+                    DowBut1 = 0;
+                    DowBut2 = 0;
+                    DowBut3 = 0;
                     Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
@@ -452,50 +508,65 @@ namespace TicTacToe
 
             CenterButton2.Enabled = false;
 
-            //3 possibility for player X
+            // possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
-                DowBut1 + DowBut2 + DowBut3 == 3)
+                DowBut1 + DowBut2 + DowBut3 == 3 || UpBut1 + CenBut1 + DowBut1 == 3 ||
+                UpBut2 + CenBut2 + DowBut2 == 3 || UpBut3 + CenBut3 + DowBut3 == 3 ||
+                UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+            {
                 MessageBox.Show("Player X wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player X
-            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
-                || UpBut3 + CenBut3 + DowBut3 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player X
-            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                      "Congratulations!", MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
 
-            //3 possibility for player O
+            // possibility for player O
             if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
-                DowBut1 + DowBut2 + DowBut3 == -3)
+                DowBut1 + DowBut2 + DowBut3 == -3 || UpBut1 + CenBut1 + DowBut1 == -3 ||
+                UpBut2 + CenBut2 + DowBut2 == -3 || UpBut3 + CenBut3 + DowBut3 == -3 ||
+                UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+            {
                 MessageBox.Show("Player O wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player O
-            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
-                || UpBut3 + CenBut3 + DowBut3 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player O
-            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                       "Congratulations!", MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
 
-            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
+
+            if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
                   CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
                     MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    PlayerXLabel.BackColor = Color.LightPink;
+                    PlayerOLabel.BackColor = Color.White;
+                    UpBut1 = 0;
+                    UpBut2 = 0;
+                    UpBut3 = 0;
+                    CenBut1 = 0;
                     CenBut2 = 0;
+                    CenBut3 = 0;
+                    DowBut1 = 0;
+                    DowBut2 = 0;
+                    DowBut3 = 0;
                     Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
@@ -541,51 +612,65 @@ namespace TicTacToe
             }
 
             CenterButton3.Enabled = false;
-
-            //3 possibility for player X
+            // possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
-                DowBut1 + DowBut2 + DowBut3 == 3)
+                DowBut1 + DowBut2 + DowBut3 == 3 || UpBut1 + CenBut1 + DowBut1 == 3 ||
+                UpBut2 + CenBut2 + DowBut2 == 3 || UpBut3 + CenBut3 + DowBut3 == 3 ||
+                UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+            {
                 MessageBox.Show("Player X wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player X
-            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
-                || UpBut3 + CenBut3 + DowBut3 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player X
-            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                      "Congratulations!", MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
 
-            //3 possibility for player O
+            // possibility for player O
             if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
-                DowBut1 + DowBut2 + DowBut3 == -3)
+                DowBut1 + DowBut2 + DowBut3 == -3 || UpBut1 + CenBut1 + DowBut1 == -3 ||
+                UpBut2 + CenBut2 + DowBut2 == -3 || UpBut3 + CenBut3 + DowBut3 == -3 ||
+                UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+            {
                 MessageBox.Show("Player O wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player O
-            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
-                || UpBut3 + CenBut3 + DowBut3 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player O
-            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                       "Congratulations!", MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
 
-            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
+
+            if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
                  CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
                     MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    PlayerXLabel.BackColor = Color.LightPink;
+                    PlayerOLabel.BackColor = Color.White;
+                    UpBut1 = 0;
+                    UpBut2 = 0;
+                    UpBut3 = 0;
+                    CenBut1 = 0;
+                    CenBut2 = 0;
                     CenBut3 = 0;
+                    DowBut1 = 0;
+                    DowBut2 = 0;
+                    DowBut3 = 0;
                     Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
@@ -632,50 +717,65 @@ namespace TicTacToe
 
             DownButton1.Enabled = false;
 
-            //3 possibility for player X
+            // possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
-                DowBut1 + DowBut2 + DowBut3 == 3)
+                DowBut1 + DowBut2 + DowBut3 == 3 || UpBut1 + CenBut1 + DowBut1 == 3 ||
+                UpBut2 + CenBut2 + DowBut2 == 3 || UpBut3 + CenBut3 + DowBut3 == 3 ||
+                UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+            {
                 MessageBox.Show("Player X wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player X
-            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
-                || UpBut3 + CenBut3 + DowBut3 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player X
-            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                      "Congratulations!", MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
 
-            //3 possibility for player O
+            // possibility for player O
             if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
-                DowBut1 + DowBut2 + DowBut3 == -3)
+                DowBut1 + DowBut2 + DowBut3 == -3 || UpBut1 + CenBut1 + DowBut1 == -3 ||
+                UpBut2 + CenBut2 + DowBut2 == -3 || UpBut3 + CenBut3 + DowBut3 == -3 ||
+                UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+            {
                 MessageBox.Show("Player O wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player O
-            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
-                || UpBut3 + CenBut3 + DowBut3 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player O
-            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                       "Congratulations!", MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
 
-            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
+
+            if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
                  CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
                     MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    PlayerXLabel.BackColor = Color.LightPink;
+                    PlayerOLabel.BackColor = Color.White;
+                    UpBut1 = 0;
+                    UpBut2 = 0;
+                    UpBut3 = 0;
+                    CenBut1 = 0;
+                    CenBut2 = 0;
+                    CenBut3 = 0;
                     DowBut1 = 0;
+                    DowBut2 = 0;
+                    DowBut3 = 0;
                     Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
@@ -722,50 +822,65 @@ namespace TicTacToe
 
             DownButton2.Enabled = false;
 
-            //3 possibility for player X
+            // possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
-                DowBut1 + DowBut2 + DowBut3 == 3)
+                DowBut1 + DowBut2 + DowBut3 == 3 || UpBut1 + CenBut1 + DowBut1 == 3 ||
+                UpBut2 + CenBut2 + DowBut2 == 3 || UpBut3 + CenBut3 + DowBut3 == 3 ||
+                UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+            {
                 MessageBox.Show("Player X wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player X
-            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
-                || UpBut3 + CenBut3 + DowBut3 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player X
-            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                      "Congratulations!", MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
 
-            //3 possibility for player O
+            // possibility for player O
             if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
-                DowBut1 + DowBut2 + DowBut3 == -3)
+                DowBut1 + DowBut2 + DowBut3 == -3 || UpBut1 + CenBut1 + DowBut1 == -3 ||
+                UpBut2 + CenBut2 + DowBut2 == -3 || UpBut3 + CenBut3 + DowBut3 == -3 ||
+                UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+            {
                 MessageBox.Show("Player O wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player O
-            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
-                || UpBut3 + CenBut3 + DowBut3 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player O
-            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                       "Congratulations!", MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
 
-            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
+
+            if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
                  CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
                     MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    PlayerXLabel.BackColor = Color.LightPink;
+                    PlayerOLabel.BackColor = Color.White;
+                    UpBut1 = 0;
+                    UpBut2 = 0;
+                    UpBut3 = 0;
+                    CenBut1 = 0;
+                    CenBut2 = 0;
+                    CenBut3 = 0;
                     DowBut1 = 0;
+                    DowBut2 = 0;
+                    DowBut3 = 0;
                     Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
@@ -812,50 +927,65 @@ namespace TicTacToe
 
             DownButton3.Enabled = false;
 
-            //3 possibility for player X
+            // possibility for player X
             if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
-                DowBut1 + DowBut2 + DowBut3 == 3)
+                DowBut1 + DowBut2 + DowBut3 == 3 || UpBut1 + CenBut1 + DowBut1 == 3 ||
+                UpBut2 + CenBut2 + DowBut2 == 3 || UpBut3 + CenBut3 + DowBut3 == 3 ||
+                UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+            {
                 MessageBox.Show("Player X wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player X
-            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
-                || UpBut3 + CenBut3 + DowBut3 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player X
-            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
-                MessageBox.Show("Player X wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                      "Congratulations!", MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
 
-            //3 possibility for player O
+            // possibility for player O
             if (UpBut1 + UpBut2 + UpBut3 == -3 || CenBut1 + CenBut2 + CenBut3 == -3 ||
-                DowBut1 + DowBut2 + DowBut3 == -3)
+                DowBut1 + DowBut2 + DowBut3 == -3 || UpBut1 + CenBut1 + DowBut1 == -3 ||
+                UpBut2 + CenBut2 + DowBut2 == -3 || UpBut3 + CenBut3 + DowBut3 == -3 ||
+                UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
+            {
                 MessageBox.Show("Player O wins! Thank you for playing.",
-                    "Congratulations!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            //3 possibility for player O
-            else if (UpBut1 + CenBut1 + DowBut1 == -3 || UpBut2 + CenBut2 + DowBut2 == -3
-                || UpBut3 + CenBut3 + DowBut3 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
-            //2 possibility for player O
-            else if (UpBut1 + CenBut2 + DowBut3 == -3 || UpBut3 + CenBut2 + DowBut1 == -3)
-                MessageBox.Show("Player O wins! Thank you for playing.",
-                   "Congratulations!", MessageBoxButtons.OK,
-                   MessageBoxIcon.Information);
+                       "Congratulations!", MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
 
-            else if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
+                UpButton1.Enabled = false;
+                UpButton2.Enabled = false;
+                UpButton3.Enabled = false;
+                CenterButton1.Enabled = false;
+                CenterButton2.Enabled = false;
+                CenterButton3.Enabled = false;
+                DownButton1.Enabled = false;
+                DownButton2.Enabled = false;
+                DownButton3.Enabled = false;
+            }
+
+            if (UpBut1 + UpBut2 + UpBut3 + CenBut1 +
                  CenBut2 + CenBut3 + DowBut1 + DowBut2 + DowBut3 == 1)
                 if (UpBut1 != 0 && UpBut2 != 0 && UpBut3 != 0 && CenBut1 != 0 &&
                 CenBut2 != 0 && CenBut3 != 0 && DowBut1 != 0 && DowBut2 != 0 && DowBut3 != 0)
                 {
                     MessageBox.Show("Thank you for playing!", "Game Over", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    PlayerXLabel.BackColor = Color.LightPink;
+                    PlayerOLabel.BackColor = Color.White;
+                    UpBut1 = 0;
+                    UpBut2 = 0;
+                    UpBut3 = 0;
+                    CenBut1 = 0;
+                    CenBut2 = 0;
+                    CenBut3 = 0;
                     DowBut1 = 0;
+                    DowBut2 = 0;
+                    DowBut3 = 0;
                     Turn = 1;
                     UpButton1.Text = ("");
                     UpButton1.Enabled = true;
