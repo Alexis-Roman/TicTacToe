@@ -29,14 +29,7 @@ namespace TicTacToe
                 Turn++;
             }
             
-            /* else if (UpButton2.Text == "O")
-                UpButton1.Text = ("X");
-
-            else if (UpButton3.Text == "X")
-                UpButton1.Text = ("O");
-            else
-            { }
-            UpButton1.Enabled = false; */
+            
         }
 
         private void UpButton2_Click1(object? sender, EventArgs e)
@@ -57,16 +50,7 @@ namespace TicTacToe
                 UpButton2.Text = ("O");
                 Turn++;
             }
-            /* UpButton2.Text = ("X");
-
-            if (UpButton1.Text == "X" )
-                UpButton2.Text = ("O");
-
-            else if (UpButton1.Text == "O")
-                UpButton2.Text = ("X");
-
-            else if (UpButton3.Text == "X")
-                UpButton2.Text = ("O"); */
+            
 
         }
 
@@ -84,19 +68,6 @@ namespace TicTacToe
                 Turn++;
             }
 
-            /* UpButton3.Text = ("X");
-            
-            if (UpButton1.Text == "X" && UpButton2.Text == "O")
-                UpButton3.Text = ("X");
-
-            else if (UpButton1.Text == "O")
-                UpButton3.Text = ("X");
-
-            else if (UpButton2.Text == "X")
-                UpButton3.Text = ("O");
-
-            else if (UpButton2.Text == "O")
-                UpButton3.Text = ("X"); */
 
         }
 
@@ -132,22 +103,62 @@ namespace TicTacToe
 
         private void CenterButton3_Click(object sender, EventArgs e)
         {
-           
+            if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
+            {
+                CenterButton3.Text = ("X");
+                Turn++;
+            }
+
+            else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
+            {
+                CenterButton3.Text = ("O");
+                Turn++;
+            }
         }
 
         private void DownButton1_Click(object sender, EventArgs e)
         {
-            
+            if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
+            {
+                DownButton1.Text = ("X");
+                Turn++;
+            }
+
+            else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
+            {
+                DownButton1.Text = ("O");
+                Turn++;
+            }
         }
 
         private void DownButton2_Click(object sender, EventArgs e)
         {
-            
+            if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
+            {
+                DownButton2.Text = ("X");
+                Turn++;
+            }
+
+            else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
+            {
+                DownButton2.Text = ("O");
+                Turn++;
+            }
         }
 
         private void DownButton3_Click(object sender, EventArgs e)
         {
-            
+            if (Turn == 1 || Turn == 3 || Turn == 5 || Turn == 7 || Turn == 9)
+            {
+                DownButton3.Text = ("X");
+                Turn++;
+            }
+
+            else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
+            {
+                DownButton3.Text = ("O");
+                Turn++;
+            }
         }
     }
 }
