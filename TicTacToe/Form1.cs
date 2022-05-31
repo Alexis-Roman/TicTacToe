@@ -89,6 +89,25 @@ namespace TicTacToe
                     MessageBox.Show("It's a draw.",
                                "Thank you for playing!", MessageBoxButtons.OK,
                                MessageBoxIcon.Information);
+                    UpBut1 = 0;
+                    UpButton1.Text = ("");
+                    UpButton1.Enabled = true;
+                    UpButton2.Text = ("");
+                    UpButton2.Enabled = true;
+                    UpButton3.Text = ("");
+                    UpButton3.Enabled = true;
+                    CenterButton1.Text = ("");
+                    CenterButton1.Enabled = true;
+                    CenterButton2.Text = ("");
+                    CenterButton2.Enabled = true;
+                    CenterButton3.Text = ("");
+                    CenterButton3.Enabled = true;
+                    DownButton1.Text = ("");
+                    DownButton1.Enabled = true;
+                    DownButton2.Text = ("");
+                    DownButton2.Enabled = true;
+                    DownButton3.Enabled = true;
+
                 }
                 else
                 { }
