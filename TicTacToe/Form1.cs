@@ -11,7 +11,7 @@ namespace TicTacToe
     public partial class TicTacToe : Form
     {
         byte Turn = 1;
-        byte UpBut1, UpBut2, UpBut3, CenBut1, CenBut2, CenBut3, 
+        sbyte UpBut1, UpBut2, UpBut3, CenBut1, CenBut2, CenBut3, 
              DowBut1, DowBut2, DowBut3;
         
         public TicTacToe()
@@ -33,7 +33,7 @@ namespace TicTacToe
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 UpButton1.Text = ("O");
-                UpBut1 = 2;
+                UpBut1 = -1;
                 PlayerXLabel.BackColor = Color.LightPink;
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
@@ -85,7 +85,7 @@ namespace TicTacToe
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 UpButton2.Text = ("O");
-                UpBut2= 2;
+                UpBut2= -1;
                 PlayerXLabel.BackColor = Color.LightPink;
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
@@ -125,7 +125,7 @@ namespace TicTacToe
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 UpButton3.Text = ("O");
-                UpBut3 = 2;
+                UpBut3 = -1;
                 PlayerXLabel.BackColor = Color.LightPink;
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
@@ -165,7 +165,7 @@ namespace TicTacToe
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 CenterButton1.Text = ("O");
-                CenBut1 = 2;
+                CenBut1 = -1;
                 PlayerXLabel.BackColor = Color.LightPink;
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
@@ -188,7 +188,7 @@ namespace TicTacToe
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 CenterButton2.Text = ("O");
-                CenBut2 = 2;
+                CenBut2 = -1;
                 PlayerXLabel.BackColor = Color.LightPink;
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
@@ -211,7 +211,7 @@ namespace TicTacToe
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 CenterButton3.Text = ("O");
-                CenBut3 = 2;
+                CenBut3 = -1;
                 PlayerXLabel.BackColor = Color.LightPink;
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
@@ -234,7 +234,7 @@ namespace TicTacToe
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 DownButton1.Text = ("O");
-                DowBut1 = 2;
+                DowBut1 = -1;
                 PlayerXLabel.BackColor = Color.LightPink;
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
@@ -257,7 +257,7 @@ namespace TicTacToe
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 DownButton2.Text = ("O");
-                DowBut2 = 2;
+                DowBut2 = -1;
                 PlayerXLabel.BackColor = Color.LightPink;
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
@@ -280,7 +280,7 @@ namespace TicTacToe
             else if (Turn == 2 || Turn == 4 || Turn == 6 || Turn == 8)
             {
                 DownButton3.Text = ("O");
-                DowBut3 = 2; 
+                DowBut3 = -1; 
                 PlayerXLabel.BackColor = Color.LightPink;
                 PlayerOLabel.BackColor = Color.White;
                 Turn++;
