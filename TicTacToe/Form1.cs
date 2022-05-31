@@ -11,7 +11,8 @@ namespace TicTacToe
     public partial class TicTacToe : Form
     {
         byte Turn = 1;
-        byte UpBut1, UpBut2, UpBut3, CenBut1, CenBut2, CenBut3, DowBut1, DowBut2, DowBut3;
+        byte UpBut1, UpBut2, UpBut3, CenBut1, CenBut2, CenBut3, 
+             DowBut1, DowBut2, DowBut3;
         
         public TicTacToe()
         {
@@ -39,11 +40,28 @@ namespace TicTacToe
             }
 
             UpButton1.Enabled = false;
+            //WINNER CODE 
+            //8 winning possibility per player... so 15 na else if???
+            //then else statement for draw
+            //papalitan lang ==6 if O is the winner
 
-            if (UpBut1 + UpBut2 + UpBut3 == 3)
-                MessageBox.Show("Player X wins. Congratulations!");
-
-
+            //3 possibility
+            if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
+                DowBut1 + DowBut2 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                    "Congratulations!",MessageBoxButtons.OK, 
+                    MessageBoxIcon.Information);
+            //3 possibility
+            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
+                || UpBut3 + CenBut3 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility
+            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
 
         }
 
@@ -75,8 +93,22 @@ namespace TicTacToe
 
             UpButton2.Enabled = false;
 
-            if (UpBut1 + UpBut2 + UpBut3 == 3)
-                MessageBox.Show("Player X wins. Congratulations!");
+            if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
+                DowBut1 + DowBut2 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility
+            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
+                || UpBut3 + CenBut3 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility
+            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
         }
 
         private void UpButton3_Click(object sender, EventArgs e)
@@ -101,8 +133,22 @@ namespace TicTacToe
 
             UpButton3.Enabled = false;
 
-            if (UpBut1 + UpBut2 + UpBut3 == 3)
-                MessageBox.Show("Player X wins. Congratulations!");
+            if (UpBut1 + UpBut2 + UpBut3 == 3 || CenBut1 + CenBut2 + CenBut3 == 3 ||
+                DowBut1 + DowBut2 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                    "Congratulations!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            //3 possibility
+            else if (UpBut1 + CenBut1 + DowBut1 == 3 || UpBut2 + CenBut2 + DowBut2 == 3
+                || UpBut3 + CenBut3 + DowBut3 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            //2 possibility
+            else if (UpBut1 + CenBut2 + DowBut3 == 3 || UpBut3 + CenBut2 + DowBut1 == 3)
+                MessageBox.Show("Player X wins! Thank you for playing.",
+                   "Congratulations!", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
         }
 
         private void CenterButton1_Click(object sender, EventArgs e)
